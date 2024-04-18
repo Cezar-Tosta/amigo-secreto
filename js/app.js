@@ -17,6 +17,11 @@ function adicionar(){
 };   
 
 function sortear(){
+    if (amigos.length < 4) {
+        alert('Deve-se ter 4 participantes, pelo menos.');
+        return;
+    };
+
     embaralha(amigos);
     let sorteio = document.getElementById("lista-sorteio");
 
